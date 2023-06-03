@@ -1,0 +1,224 @@
+.wrapper{
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonGroup{
+    display: flex;
+    gap: 2rem;
+}   
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+    width: 14rem;
+    height: 6rem;
+    color: var(--black);
+    font-size: 1.8rem;
+    background-color: var(--nextButtons);
+    font-weight: bold;
+    padding: 2rem 4rem;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+    text-align: center;
+}
+
+.button:hover, .button:focus{
+    background-color: #63bda3;
+    border: none;
+    outline: none;
+    color: var(--white);
+}
+
+.buttonPrevious, .buttonPrevious:focus{
+    background-color: var(--prevButton);
+    color: var(--white);
+}
+
+.buttonPrevious:hover {
+    background-color: #d2d1d1;
+}
+
+.buttonSubmit{
+    background-color: var(--submitButtons);
+    color: var(--white);
+}
+
+.buttonSubmit:hover, .buttonSubmit:focus{
+    background-color: #f9b238;
+}
+
+.main{
+    margin: 8rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionHeading {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5rem;
+    width: 58rem;
+    height: auto;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.countdownTimer {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -25rem;
+  }
+  
+  /* .countdownTimerSvg {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    transform: translate(50%, 50%);
+    background-color: yellow;
+  } */
+  
+  /* .countdownTimerPath {
+    fill: none;
+    stroke: #5752e5;
+    stroke-width: 5px;
+    stroke-linecap: round;
+  } */
+  
+/* .countdownTimerProgress {
+    fill: none;
+    stroke: red;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 1s linear; 
+    background-color: red;
+    
+} */
+
+
+  
+.countdownTimerText {
+    font-weight: bold;
+    color: #5752e5;
+    font-size: 1.6rem;
+}
+
+.end {
+    color: red;
+    font-weight: 600;
+    font-size: 1.8rem;
+};
+
+
+.questionNumber{
+    color: #5752e5;
+    font-weight: 450;
+    margin-top: 4rem;
+}
+
+.questionContent {
+    margin: 4rem 0 2rem;
+}
+
+.sectionChoice {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.choiceList{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    background-color: var(--white);
+    width: 55rem;
+    height: 2rem;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    font-weight: 500;
+    transition: all 0.1s ease 0s;
+}
+
+.listReviewMode {
+    background-color: var(--white);
+    width: 55rem;
+    height: 2rem;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.listReviewMode:hover, .listReviewMode:focus{
+    cursor: pointer;
+}
+
+.list:hover, .list:focus {
+    background-color: var(--answerHover);
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+
+.selectedAnswer {
+    background-color: var(--answerHover);
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+.correct{
+    background-color: var(--correctAnswer);
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+.wrong{
+    background-color: var(--incorrAnswer);
+    color: var(--white);
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
